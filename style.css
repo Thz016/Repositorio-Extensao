@@ -37,3 +37,55 @@ h1{
     width: 60px;
     height: auto;
 }
+.produtos-container{
+    margin-left: 220px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+.produto{
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.25s ease;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.produto:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.produto img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: relative;
+    margin-left: 20px;
+}
+.dropdown-content a{
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 14px;
+}
+.dropdown-content a:hover {
+    background: black;
+}
+.dropdown:hover .dropdown-content{
+    display: flex;
+}
