@@ -90,23 +90,54 @@ h1{
     display: flex;
 }
 .form-anuncio {
-    max-width: 400px;
-    margin: 40px auto;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px; /* <<< espaçamento entre os campos */
+}
+
+.form-anuncio label {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .form-anuncio input,
 .form-anuncio textarea {
-    padding: 8px;
+    width: 100%;
+    padding: 12px;
     font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-anuncio textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-anuncio input[type="file"] {
+    padding: 6px;
 }
 
 .form-anuncio button {
-    padding: 10px;
-    background: #28a745;
+    margin-top: 10px;
+    padding: 14px;
+    background-color: #3483fa; /* azul estilo Mercado Livre */
     color: white;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-anuncio button:hover {
+    background-color: #2968c8;
 }
