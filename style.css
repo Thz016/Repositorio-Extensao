@@ -89,3 +89,24 @@ h1{
 .dropdown:hover .dropdown-content{
     display: flex;
 }
+.form-anuncio {
+    max-width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-anuncio input,
+.form-anuncio textarea {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.form-anuncio button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+} 
